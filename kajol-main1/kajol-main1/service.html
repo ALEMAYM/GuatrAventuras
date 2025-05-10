@@ -1,0 +1,796 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>GuateAventuras</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+
+    <!-- Favicon -->
+    <link href="img/kajol.jpg" rel="icon">
+
+
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Topbar Start -->
+    <div class="container-fluid bg-light pt-3 d-none d-lg-block">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 text-center text-lg-left mb-2 mb-lg-0">
+                    <div class="d-inline-flex align-items-center">
+                        <p><i class="fa fa-envelope mr-2"></i>GuateAventura@gmail.com</p>
+                        <p class="text-body px-3">|</p>
+                        <p><i class="fa fa-phone-alt mr-2"></i>+502 3339 9018</p>
+                    </div>
+                </div>
+                <div class="col-lg-6 text-center text-lg-right">
+            </div>
+        </div>
+    </div>
+    <!-- Topbar End -->
+
+    <!-- Navbar Start -->
+    <div class="container-fluid position-relative nav-bar p-0">
+        <div class="container-lg position-relative p-0 px-lg-3" style="z-index: 9;">
+            <nav class="navbar navbar-expand-lg bg-light navbar-light shadow-lg py-3 py-lg-0 pl-3 pl-lg-5">
+                <a href="" class="navbar-brand">
+                    <h1 class="m-0 text-primary"><span class="text-dark">KAJOL</span>Guatemala</h1>
+                </a>
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-between px-3" id="navbarCollapse">
+                    <div class="navbar-nav ml-auto py-0">
+                        <a href="index.html" class="nav-item nav-link">Inicio</a>
+                        <a href="about.html" class="nav-item nav-link">Sobre Nosotros</a>
+                        <a href="service.html" class="nav-item nav-link">Servicios</a>
+                        <a href="package.html" class="nav-item nav-link">Paquetes</a>
+                        <div class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle active" data-toggle="dropdown">Páginas</a>
+                            <div class="dropdown-menu border-0 rounded-0 m-0">
+                                <a href="destination.html" class="dropdown-item active">Destinos</a>
+                                <a href="guide.html" class="dropdown-item">Guías de Viajes</a>
+                            </div>
+                        </div>
+                        <a href="contact.html" class="nav-item nav-link">Contacto</a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <!-- Navbar End -->
+
+    <!-- Header Start -->
+    <div class="container-fluid page-header">
+        <div class="container">
+            <div class="d-flex flex-column align-items-center justify-content-center" style="min-height: 400px">
+                <h3 class="display-4 text-white text-uppercase">Servicios</h3>
+                <div class="d-inline-flex text-white">
+                    <p class="m-0 text-uppercase"><a class="text-white" href="">Inicio</a></p>
+                    <i class="fa fa-angle-double-right pt-1 px-3"></i>
+                    <p class="m-0 text-uppercase">Servicios</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Header End -->
+
+
+<!-- Booking Start -->
+        <div class="container-fluid booking mt-5 pb-5">
+            <div class="container pb-5">
+                <div class="bg-light shadow" style="padding: 30px;">
+                    <div class="row align-items-center" style="min-height: 60px;">
+                        <div class="col-md-10">
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <div class="mb-3 mb-md-0">
+                                        <select class="custom-select px-4" style="height: 47px;" id="first-dropdown" onchange="updateSecondDropdown()">
+                                            <option selected>DEPARTAMENTOS</option>
+                                            <option value="1">Peten</option>
+                                            <option value="2">Huehuetenango</option>
+                                            <option value="3">Quiché</option>
+                                            <option value="4">Alta Verapaz</option>
+                                            <option value="5">Baja Verapaz</option>
+                                            <option value="6">San Marcos</option>
+                                            <option value="7">Quetzaltenango</option>
+                                            <option value="8">Totonicapan</option>
+                                            <option value="9">Sololá</option>
+                                            <option value="10">Retalhuleu</option>
+                                            <option value="11">Suchitepequez</option>
+                                            <option value="12">Chimaltenango</option>
+                                            <option value="13">Sacatepéquez</option>
+                                            <option value="14">Guatemala</option>
+                                            <option value="15">Escuintla</option>
+                                            <option value="16">Santa Rosa</option>
+                                            <option value="17">Jutiapa</option>
+                                            <option value="18">Jalapa</option>
+                                            <option value="19">Chiquimula</option>
+                                            <option value="20">El Progreso</option>
+                                            <option value="21">Zacapa</option>
+                                            <option value="22">Isabal</option>
+
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="mb-3 mb-md-0">
+                                        <select class="custom-select px-4" style="height: 47px;" id="second-dropdown">
+
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="mb-3 mb-md-0">
+                                        <div class="date" id="date1" data-target-input="nearest">
+                                            <input type="text" class="form-control p-4 datetimepicker-input" placeholder="Fecha de Ida" data-target="#date1" data-toggle="datetimepicker" />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="mb-3 mb-md-0">
+                                        <div class="date" id="date2" data-target-input="nearest">
+                                            <input type="text" class="form-control p-4 datetimepicker-input" placeholder="Fecha de Regreso" data-target="#date2" data-toggle="datetimepicker" />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-2">
+                            <button class="btn btn-primary btn-block" type="submit" style="height: 47px; margin-top: -2px;">Buscar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Booking End -->
+        <script>
+            function updateSecondDropdown() {
+                var firstDropdown = document.getElementById("first-dropdown");
+                var secondDropdown = document.getElementById("second-dropdown");
+
+                // Limpiar las opciones existentes
+                secondDropdown.innerHTML = "";
+
+                // Obtener el valor seleccionado en el primer dropdown
+                var selectedValue = firstDropdown.value;
+
+                // Llenar el segundo dropdown basado en la opción seleccionada en el primero
+                if (selectedValue === "1") {
+                    var option1 = document.createElement("option");
+                    option1.text = "Tikal";
+                    secondDropdown.add(option1);
+                    var option2 = document.createElement("option");
+                    option2.text = "Parque Regional Municipal Actúl Kan"
+                    secondDropdown.add(option2);
+                    var option3 = document.createElement("option");
+                    option3.text = "Estación Biológica las Guacamayas";
+                    secondDropdown.add(option3);
+                    var option4 = document.createElement("option");
+                    option4.text = "Lago Petén Itzá";
+                    secondDropdown.add(option4);
+                    var option5 = document.createElement("option");
+                    option5.text = "Island of Flores";
+                    secondDropdown.add(option5);
+                    var option6 = document.createElement("option");
+                    option6.text = "Zoologico Petencito";
+                    secondDropdown.add(option6);
+                    var option7 = document.createElement("option");
+                    option7.text = "Finca Ixobell";
+                    secondDropdown.add(option7);
+                    var option8 = document.createElement("option");
+                    option8.text = "Playa Chechemal";
+                    secondDropdown.add(option8);
+                    var option9 = document.createElement("option");
+                    option9.text = "Flores";
+                    secondDropdown.add(option9);
+                    var option10 = document.createElement("option");
+                    option10.text = "Jorge'S  Rope Swin";
+                    secondDropdown.add(option10);
+                    var option11 = document.createElement("option");
+                    option11.text = "Crater Azul";
+                    secondDropdown.add(option11);
+
+
+
+                } else if (selectedValue === "2") {
+                    var option1 = document.createElement("option");
+                    option1.text = "Sitio Arqueológico Zaculeu";
+                    secondDropdown.add(option1);
+                    var option2 = document.createElement("option");
+                    option2.text = "Mirador de Juan Dieguez Olaverri"
+                    secondDropdown.add(option2);
+                    var option3 = document.createElement("option");
+                    option3.text = "Llamas de los Cuchumatanes";
+                    secondDropdown.add(option3);
+                    var option4 = document.createElement("option");
+                    option4.text = "Laguna Magdalena";
+                    secondDropdown.add(option4);
+                    var option5 = document.createElement("option");
+                    option5.text = "Parque Regional Twi A'lj Witz";
+                    secondDropdown.add(option5);
+                    var option6 = document.createElement("option");
+                    option6.text = "Hoyo el Cimarrón";
+                    secondDropdown.add(option6);
+                    var option7 = document.createElement("option");
+                    option7.text = "Laguna Brava";
+                    secondDropdown.add(option7);
+                    var option8 = document.createElement("option");
+                    option8.text = "Cenotes de Candelaria";
+                    secondDropdown.add(option8);
+                    var option9 = document.createElement("option");
+                    option9.text = "Rio San Juan";
+                    secondDropdown.add(option9);
+                    var option10 = document.createElement("option");
+                    option10.text = "Campamentos Ahuehuetl";
+                    secondDropdown.add(option10);
+                    var option11 = document.createElement("option");
+                    option11.text = "Laguna Encantada";
+                    secondDropdown.add(option11);
+                    var option12 = document.createElement("option");
+                    option12.text = "Laguna Quetzal";
+                    secondDropdown.add(option12);
+                    var option12 = document.createElement("option");
+                    option12.text = "Laguna Quetzal";
+                    secondDropdown.add(option12);
+                    var option13 = document.createElement("option");
+                    option13.text = "Rio Lagartero";
+                    secondDropdown.add(option13);
+
+                } else if (selectedValue === "3") {
+                    var option1 = document.createElement("option");
+                    option1.text = "Laguna Lemoa";
+                    secondDropdown.add(option1);
+                    var option2 = document.createElement("option");
+                    option2.text = "Arco Gucumatz"
+                    secondDropdown.add(option2);
+                    var option3 = document.createElement("option");
+                    option3.text = "Museo de Máscaras Ceremoneales";
+                    secondDropdown.add(option3);
+                    var option4 = document.createElement("option");
+                    option4.text = "Parque Ecologico los Senderos del Abuelo";
+                    secondDropdown.add(option4);
+                    var option5 = document.createElement("option");
+                    option5.text = "Mercado de Chichicastenango";
+                    secondDropdown.add(option5);
+                    var option6 = document.createElement("option");
+                    option6.text = "Cataratas Santa Avelina";
+                    secondDropdown.add(option6);
+                    var option7 = document.createElement("option");
+                    option7.text = "Mirador Xecas Morenas";
+                    secondDropdown.add(option7);
+                    var option8 = document.createElement("option");
+                    option8.text = "Las Grutas de Cunen";
+                    secondDropdown.add(option8);
+                    var option9 = document.createElement("option");
+                    option9.text = "Cueva del Rey";
+                    secondDropdown.add(option9);
+                    var option10 = document.createElement("option");
+                    option10.text = "Mirador de Chichicastenango";
+                    secondDropdown.add(option10);
+
+                } else if (selectedValue === "4") {
+                    var option1 = document.createElement("option");
+                    option1.text = "Semuc Champey";
+                    secondDropdown.add(option1);
+                    var option2 = document.createElement("option");
+                    option2.text = "Grutas del Rey Marcos"
+                    secondDropdown.add(option2);
+                    var option3 = document.createElement("option");
+                    option3.text = "Parque Nacional Grutas de Lanquín";
+                    secondDropdown.add(option3);
+                    var option4 = document.createElement("option");
+                    option4.text = "Parque Nacional las Victorias";
+                    secondDropdown.add(option4);
+                    var option5 = document.createElement("option");
+                    option5.text = "Hun Nal Ye";
+                    secondDropdown.add(option5);
+                    var option6 = document.createElement("option");
+                    option6.text = "Camila";
+                    secondDropdown.add(option6);
+                    var option7 = document.createElement("option");
+                    option7.text = "Laguna Lachuá";
+                    secondDropdown.add(option7);
+                    var option8 = document.createElement("option");
+                    option8.text = "Finca Sacmoc";
+                    secondDropdown.add(option8);
+                    var option9 = document.createElement("option");
+                    option9.text = "Parque Natural las Concha";
+                    secondDropdown.add(option9);
+                    var option10 = document.createElement("option");
+                    option10.text = "Cuevas de B'ombi'il Pek y Jul lq'";
+                    secondDropdown.add(option10);
+                    var option11 = document.createElement("option");
+                    option11.text = "Río Sachichá'";
+                    secondDropdown.add(option11);
+                    var option12 = document.createElement("option");
+                    option12.text = "Biotopo del Quetzal";
+                    secondDropdown.add(option12);
+                    var option13 = document.createElement("option");
+                    option13.text = "Lagunas de Sepalau";
+                    secondDropdown.add(option13);
+
+                } else if (selectedValue === "5") {
+                    var option1 = document.createElement("option");
+                    option1.text = "Salto del Chilascó";
+                    secondDropdown.add(option1);
+                    var option2 = document.createElement("option");
+                    option2.text = "Museo Regional del Trapiche"
+                    secondDropdown.add(option2);
+                    var option3 = document.createElement("option");
+                    option3.text = "Rabinal";
+                    secondDropdown.add(option3);
+                    var option4 = document.createElement("option");
+                    option4.text = "Cueva de Chicoy";
+                    secondDropdown.add(option4);
+                    var option5 = document.createElement("option");
+                    option5.text = "Ranchitos del Quetzal";
+                    secondDropdown.add(option5);
+                    var option6 = document.createElement("option");
+                    option6.text = "Río Negro";
+                    secondDropdown.add(option6);
+                    var option7 = document.createElement("option");
+                    option7.text = "Turicentro las Orquídeas";
+                    secondDropdown.add(option7);
+
+
+                } else if (selectedValue === "6") {
+                    var option1 = document.createElement("option");
+                    option1.text = "Refugio de Quetzal";
+                    secondDropdown.add(option1);
+                    var option2 = document.createElement("option");
+                    option2.text = "Cerró Tzankujil"
+                    secondDropdown.add(option2);
+                    var option3 = document.createElement("option");
+                    option3.text = "Cataratas de la igualdad";
+                    secondDropdown.add(option3);
+                    var option4 = document.createElement("option");
+                    option4.text = "Volcán Tajumulco";
+                    secondDropdown.add(option4);
+                    var option5 = document.createElement("option");
+                    option5.text = "Volcan Tacaná";
+                    secondDropdown.add(option5);
+                    var option6 = document.createElement("option");
+                    option6.text = "Playas de Tilapa";
+                    secondDropdown.add(option6);
+
+                } else if (selectedValue === "7") {
+                    var option1 = document.createElement("option");
+                    option1.text = "Volcán Santa María";
+                    secondDropdown.add(option1);
+                    var option2 = document.createElement("option");
+                    option2.text = "Volcán Santiaguito"
+                    secondDropdown.add(option2);
+                    var option3 = document.createElement("option");
+                    option3.text = "Museo del Ferrocarril de los Altos ";
+                    secondDropdown.add(option3);
+                    var option4 = document.createElement("option");
+                    option4.text = "Museo Ixkik´ de Traje Maya";
+                    secondDropdown.add(option4);
+                    var option5 = document.createElement("option");
+                    option5.text = "Museo Casa Botran";
+                    secondDropdown.add(option5);
+                    var option6 = document.createElement("option");
+                    option6.text = "Fuentes Georgianas";
+                    secondDropdown.add(option6);
+                    var option7 = document.createElement("option");
+                    option7.text = "Volcán de cerro Quemado";
+                    secondDropdown.add(option7);
+                    var option8 = document.createElement("option");
+                    option8.text = "Museo de Historia de Quetzaltenango ";
+                    secondDropdown.add(option8);
+                    var option9 = document.createElement("option");
+                    option9.text = "Zoológico Minerva  ";
+                    secondDropdown.add(option9);
+                    var option10 = document.createElement("option");
+                    option10.text = "Volcán y la Lagua Chicabal";
+                    secondDropdown.add(option10);
+                    var option11 = document.createElement("option");
+                    option11.text = "Cerró el Baúl";
+                    secondDropdown.add(option11);
+
+                } else if (selectedValue === "8") {
+                    var option1 = document.createElement("option");
+                    option1.text = "Risco de Momostenango ";
+                    secondDropdown.add(option1);
+                    var option2 = document.createElement("option");
+                    option2.text = "Volcán Cuxliquel "
+                    secondDropdown.add(option2);
+                    var option3 = document.createElement("option");
+                    option3.text = "Parque ecológico Chajil Siwan ";
+                    secondDropdown.add(option3);
+
+                } else if (selectedValue === "9") {
+                    var option1 = document.createElement("option");
+                    option1.text = "Reserva Natural Atitlán ";
+                    secondDropdown.add(option1);
+                    var option2 = document.createElement("option");
+                    option2.text = "Lago Atitlán "
+                    secondDropdown.add(option2);
+                    var option3 = document.createElement("option");
+                    option3.text = "Santa Cruz La laguna ";
+                    secondDropdown.add(option3);
+                    var option4 = document.createElement("option");
+                    option4.text = "San Juan La Laguna";
+                    secondDropdown.add(option4);
+                    var option5 = document.createElement("option");
+                    option5.text = "San Pedro la Laguna";
+                    secondDropdown.add(option5);
+                    var option6 = document.createElement("option");
+                    option6.text = "Santa Catarina Palopó";
+                    secondDropdown.add(option6);
+                    var option7 = document.createElement("option");
+                    option7.text = "San Marco La laguna";
+                    secondDropdown.add(option7);
+                    var option8 = document.createElement("option");
+                    option8.text = "San Lucas Tolimán";
+                    secondDropdown.add(option8);
+                    var option9 = document.createElement("option");
+                    option9.text = "San Antonio Palope";
+                    secondDropdown.add(option9);
+                    var option10 = document.createElement("option");
+                    option10.text = "Mundo de Abeja Maya";
+                    secondDropdown.add(option10);
+
+                } else if (selectedValue === "10") {
+                    var option1 = document.createElement("option");
+                    option1.text = "Xetulul";
+                    secondDropdown.add(option1);
+                    var option2 = document.createElement("option");
+                    option2.text = "Xocomil"
+                    secondDropdown.add(option2);
+                    var option3 = document.createElement("option");
+                    option3.text = "Xejuyup";
+                    secondDropdown.add(option3);
+                    var option4 = document.createElement("option");
+                    option4.text = "Dino Park";
+                    secondDropdown.add(option4);
+                    var option5 = document.createElement("option");
+                    option5.text = "Takalik Abaj ";
+                    secondDropdown.add(option5);
+                    var option6 = document.createElement("option");
+                    option6.text = "Museo del Juguete- Xwil";
+                    secondDropdown.add(option6);
+                    var option7 = document.createElement("option");
+                    option7.text = "Champerico";
+                    secondDropdown.add(option7);
+                    var option8 = document.createElement("option");
+                    option8.text = "Reserva Natural Finca Sa Elena ";
+                    secondDropdown.add(option8);
+                    var option9 = document.createElement("option");
+                    option9.text = "Arqueología y Etnología Horacio Alejos ";
+                    secondDropdown.add(option9);
+
+                } else if (selectedValue === "11") {
+                    var option1 = document.createElement("option");
+                    option1.text = "El corro del Carmen";
+                    secondDropdown.add(option1);
+                    var option2 = document.createElement("option");
+                    option2.text = "Playa Chicago"
+                    secondDropdown.add(option2);
+                    var option3 = document.createElement("option");
+                    option3.text = "Playa Churirín";
+                    secondDropdown.add(option3);
+                    var option4 = document.createElement("option");
+                    option4.text = "Complejo Villa Amada";
+                    secondDropdown.add(option4);
+                    var option5 = document.createElement("option");
+                    option5.text = "Río Nahualate ";
+                    secondDropdown.add(option5);
+                    var option6 = document.createElement("option");
+                    option6.text = "Paso Misterioso ";
+                    secondDropdown.add(option6);
+
+                } else if (selectedValue === "12") {
+                    var option1 = document.createElement("option");
+                    option1.text = "Iximche";
+                    secondDropdown.add(option1);
+                    var option2 = document.createElement("option");
+                    option2.text = "Volcán de Fuego"
+                    secondDropdown.add(option2);
+                    var option3 = document.createElement("option");
+                    option3.text = "Laguna Chichoy";
+                    secondDropdown.add(option3);
+                    var option4 = document.createElement("option");
+                    option4.text = "Pueblo viejo Parramos";
+                    secondDropdown.add(option4);
+                    var option5 = document.createElement("option");
+                    option5.text = "Xesuj";
+                    secondDropdown.add(option5);
+                    var option6 = document.createElement("option");
+                    option6.text = "Volcán Acatenango ";
+                    secondDropdown.add(option6);
+
+                } else if (selectedValue === "13") {
+                    var option1 = document.createElement("option");
+                    option1.text = "Convento Santa Clara";
+                    secondDropdown.add(option1);
+                    var option2 = document.createElement("option");
+                    option2.text = "Convento Capuchinas"
+                    secondDropdown.add(option2);
+                    var option3 = document.createElement("option");
+                    option3.text = "Arco de Santa Catalina";
+                    secondDropdown.add(option3);
+                    var option4 = document.createElement("option");
+                    option4.text = "Cerro de la Cruz";
+                    secondDropdown.add(option4);
+                    var option5 = document.createElement("option");
+                    option5.text = "La Recolección ";
+                    secondDropdown.add(option5);
+                    var option6 = document.createElement("option");
+                    option6.text = "Mixco Viejo";
+                    secondDropdown.add(option6);
+                    var option7 = document.createElement("option");
+                    option7.text = "San José el Viejo";
+                    secondDropdown.add(option7);
+                    var option8 = document.createElement("option");
+                    option8.text = "Cacao Junajpu";
+                    secondDropdown.add(option8);
+                    var option9 = document.createElement("option");
+                    option9.text = "Iglesia del Carmen";
+                    secondDropdown.add(option9);
+                    var option10 = document.createElement("option");
+                    option10.text = "Colegio de San Jerónimo";
+                    secondDropdown.add(option10);
+
+                } else if (selectedValue === "14") {
+                    var option1 = document.createElement("option");
+                    option1.text = "Zoológico la Aurora";
+                    secondDropdown.add(option1);
+                    var option2 = document.createElement("option");
+                    option2.text = "IRTRA Mundo Petapa "
+                    secondDropdown.add(option2);
+                    var option3 = document.createElement("option");
+                    option3.text = "Mapa de Relieve de Guatemala";
+                    secondDropdown.add(option3);
+                    var option4 = document.createElement("option");
+                    option4.text = "Palacio Nacional de Cultura";
+                    secondDropdown.add(option4);
+                    var option5 = document.createElement("option");
+                    option5.text = "Kaminaljuyú";
+                    secondDropdown.add(option5);
+                    var option6 = document.createElement("option");
+                    option6.text = "Lago de Amatitlán";
+                    secondDropdown.add(option6);
+                    var option7 = document.createElement("option");
+                    option7.text = "Museo de los niños de Guatemala";
+                    secondDropdown.add(option7);
+                    var option8 = document.createElement("option");
+                    option8.text = "Museo del Ferrocarril";
+                    secondDropdown.add(option8);
+                    var option9 = document.createElement("option");
+                    option9.text = "Museo Artes Modernas “Carlos Mérida”";
+                    secondDropdown.add(option9);
+                    var option10 = document.createElement("option");
+                    option10.text = "Museo Nacional de Historia";
+                    secondDropdown.add(option10);
+                    var option11 = document.createElement("option");
+                    option11.text = "Museo Miraflores";
+                    secondDropdown.add(option11);
+                    var option12 = document.createElement("option");
+                    option12.text = "Museo Popol Vuh ";
+                    secondDropdown.add(option12);
+
+                } else if (selectedValue === "15") {
+                    var option1 = document.createElement("option");
+                    option1.text = "Auto Safari Chapín";
+                    secondDropdown.add(option1);
+                    var option2 = document.createElement("option");
+                    option2.text = "Sipacate Naranjo"
+                    secondDropdown.add(option2);
+                    var option3 = document.createElement("option");
+                    option3.text = "Playa Tecojate";
+                    secondDropdown.add(option3);
+                    var option4 = document.createElement("option");
+                    option4.text = "Puerto San José";
+                    secondDropdown.add(option4);
+                    var option5 = document.createElement("option");
+                    option5.text = "Museo las Ilusiones";
+                    secondDropdown.add(option5);
+                    var option6 = document.createElement("option");
+                    option6.text = "Museo las Ilusiones";
+                    secondDropdown.add(option6);
+                    var option7 = document.createElement("option");
+                    option7.text = "Finca el Zapote";
+                    secondDropdown.add(option7);
+                    var option8 = document.createElement("option");
+                    option8.text = "El Baúl ";
+                    secondDropdown.add(option8);
+                    var option9 = document.createElement("option");
+                    option9.text = "Playa el Paredón";
+                    secondDropdown.add(option9);
+                    var option10 = document.createElement("option");
+                    option10.text = "Puerto Quetzal";
+                    secondDropdown.add(option10);
+                    var option11 = document.createElement("option");
+                    option11.text = "Playa Iztapa";
+                    secondDropdown.add(option11);
+                    var option12 = document.createElement("option");
+                    option12.text = "Chulamar";
+                    secondDropdown.add(option12);
+
+                } else if (selectedValue === "16") {
+                    var option1 = document.createElement("option");
+                    option1.text = "Laguna de Ayarza ";
+                    secondDropdown.add(option1);
+                    var option2 = document.createElement("option");
+                    option2.text = "Lago el Pino"
+                    secondDropdown.add(option2);
+                    var option3 = document.createElement("option");
+                    option3.text = "Playas las Lisas";
+                    secondDropdown.add(option3);
+                    var option4 = document.createElement("option");
+                    option4.text = "Volcán Tecuamburro";
+                    secondDropdown.add(option4);
+                    var option5 = document.createElement("option");
+                    option5.text = "El Hawaii";
+                    secondDropdown.add(option5);
+                    var option6 = document.createElement("option");
+                    option6.text = "Cataratas los Amantes";
+                    secondDropdown.add(option6);
+                    var option7 = document.createElement("option");
+                    option7.text = "Biotopo Monterrico – Hawaii";
+                    secondDropdown.add(option7);
+                    var option8 = document.createElement("option");
+                    option8.text = "Cascada la Concepción";
+                    secondDropdown.add(option8);
+                    var option9 = document.createElement("option");
+                    option9.text = "Canal de Chiquimulilla ";
+                    secondDropdown.add(option9);
+                    var option10 = document.createElement("option");
+                    option10.text = "Laguna de Ixpoco";
+                    secondDropdown.add(option10);
+                    var option11 = document.createElement("option");
+                    option11.text = "Río los Esclavos ";
+                    secondDropdown.add(option11);
+
+                } else if (selectedValue === "17") {
+                    var option1 = document.createElement("option");
+                    option1.text = "Laguna de Ayarza ";
+                    secondDropdown.add(option1);
+                    var option2 = document.createElement("option");
+                    option2.text = "Lago el Pino"
+                    secondDropdown.add(option2);
+                    var option3 = document.createElement("option");
+                    option3.text = "Playas las Lisas";
+                    secondDropdown.add(option3);
+                    var option4 = document.createElement("option");
+                    option4.text = "Volcán Tecuamburro";
+                    secondDropdown.add(option4);
+                    var option5 = document.createElement("option");
+                    option5.text = "El Hawaii";
+                    secondDropdown.add(option5);
+                    var option6 = document.createElement("option");
+                    option6.text = "Cataratas los Amantes";
+                    secondDropdown.add(option6);
+                    var option7 = document.createElement("option");
+                    option7.text = "Biotopo Monterrico – Hawaii";
+                    secondDropdown.add(option7);
+                    var option8 = document.createElement("option");
+                    option8.text = "Cascada la Concepción";
+                    secondDropdown.add(option8);
+                    var option9 = document.createElement("option");
+                    option9.text = "Canal de Chiquimulilla ";
+                    secondDropdown.add(option9);
+                    var option10 = document.createElement("option");
+                    option10.text = "Laguna de Ixpoco";
+                    secondDropdown.add(option10);
+                    var option11 = document.createElement("option");
+                    option11.text = "Río los Esclavos ";
+                    secondDropdown.add(option11);
+
+                }
+            }
+        </script>
+<!-- Booking End -->
+
+
+    <!-- Service Start -->
+    <div class="container-fluid py-5">
+        <div class="container pt-5 pb-3">
+            <div class="text-center mb-3 pb-3">
+                <h6 class="text-primary text-uppercase" style="letter-spacing: 5px;">Servicios</h6>
+                <h1>Servicios de Tours y Viajes</h1>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="service-item bg-white text-center mb-2 py-5 px-4">
+                        <i class="fa fa-2x fa-route mx-auto mb-4"></i>
+                        <a href="guide.html" class="mb-2">Mejores guías turisticos</a>
+                        <p class="m-0">Cada guía está capacitado para brindarte la mejor experiencia.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="service-item bg-white text-center mb-2 py-5 px-4">
+                        <i class="fa fa-2x fa-ticket-alt mx-auto mb-4"></i>
+                        <h5 class="mb-2">Reserva de Boletos</h5>
+                        <p class="m-0">Reserva de boletos en las mejores actividades de tu elección que traemos para ti</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="service-item bg-white text-center mb-2 py-5 px-4">
+                        <i class="fa fa-2x fa-hotel mx-auto mb-4"></i>
+                        <h5 class="mb-2">Reserva de Hotel</h5>
+                        <p class="m-0">Reservaremos tu habitación de hotel en el día en que realices la reserva</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Service End -->
+
+    <!-- Footer Start -->
+    <div class="container-fluid bg-dark text-white-50 py-5 px-sm-3 px-lg-5" style="margin-top: 90px;">
+        <div class="row pt-5">
+            <div class="col-lg-3 col-md-6 mb-5">
+                <a href="" class="navbar-brand">
+                    <h1 class="text-primary"><span class="text-white">Guate</span>Aventuras</h1>
+                </a>
+                <p>Cualquier duda o reclamación favor de contactarnos</p>
+            </div>
+
+            <div class="col-lg-3 col-md-6 mb-5">
+                <h5 class="text-white text-uppercase mb-4" style="letter-spacing: 5px;">Contactanos</h5>
+                <p><i class="fa fa-map-marker-alt mr-2"></i>Huehuetengo, Guatemala</p>
+                <p><i class="fa fa-phone-alt mr-2"></i>+502 3339 9018 </p>
+                <p><i class="fa fa-envelope mr-2"></i>GuateAventuras@gmail.com
+
+                </p>
+                <h6 class="text-white text-uppercase mt-4 mb-3" style="letter-spacing: 5px;">Boletín informativo</h6>
+                <div class="w-100">
+                    <div class="input-group">
+                        <input type="text" class="form-control border-light" style="padding: 25px;" placeholder="Tu email">
+                        <div class="input-group-append">
+                            <button class="btn btn-primary px-3">Ingresar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid bg-dark text-white border-top py-4 px-sm-3 px-md-5" style="border-color: rgba(256, 256, 256, .1) !important;">
+        <div class="row">
+            <div class="col-lg-6 text-center text-md-left mb-3 mb-md-0">
+                <p class="m-0 text-white-50">GuateAventuras &copy; <a href="#">StudentsUmg</a>. Todos los derechos reservados</a>
+                </p>
+            </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="fa fa-angle-double-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/tempusdominus/js/moment.min.js"></script>
+    <script src="lib/tempusdominus/js/moment-timezone.min.js"></script>
+    <script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
+
+    <!-- Contact Javascript File -->
+    <script src="mail/jqBootstrapValidation.min.js"></script>
+    <script src="mail/contact.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
